@@ -19,3 +19,8 @@ function isIsogramRecursion(str){
     
   return str.includes(slicedChar) ? false : isIsogramRecursion(str);
 }
+
+
+
+/**** one liner ***/
+var isIsogram = str =>  !/(\w).*\1/i.test(str);
