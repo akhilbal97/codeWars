@@ -13,8 +13,9 @@ function isIsogramRecursion(str){
     return true;
   }
 
+  str = str.toLowerCase();
   var slicedChar = str.charAt(0);
-  str = str.toLowerCase().slice(1);
-  
+  str = str.slice(1);
+    
   return str.includes(slicedChar) ? false : isIsogramRecursion(str);
 }
